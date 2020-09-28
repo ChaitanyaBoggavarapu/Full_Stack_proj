@@ -100,7 +100,6 @@ class UpdateInventory extends Component{
     render(){
         let dataDisplay = {};
         const { selectedRowKeys, selectedRecord } = this.state;
-        dataDisplay = data.inventoryRead;
         if (!_.isNil(this.props) && !_.isNil(this.props.getInventoryList) && !_.isNil(this.props.getInventoryList.getInventoryList) &&
             !_.isNil(this.props.getInventoryList.getInventoryList.inventory) && !isEmpty(!_.isNil(this.props.getInventoryList.getInventoryList.inventory))){
             dataDisplay = this.props.getInventoryList.getInventoryList.inventory;
